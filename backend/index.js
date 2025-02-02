@@ -21,7 +21,7 @@ app.use(cors({
     credentials: false, // Allow cookies and other credentials
 }));
 
-app.get("/",isAuth,(req,res)=>{
+app.get("/",(req,res)=>{
     return res.end("works");
 })
 app.use("/api/user",userRoutes);
